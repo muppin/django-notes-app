@@ -9,7 +9,7 @@ pipeline{
         }
         stage('Build'){
              steps{
-                echo "Building the code"
+                echo "Building the code using docker"
                 sh "docker build -t notes-app ."
             }
             
